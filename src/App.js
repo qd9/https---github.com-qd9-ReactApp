@@ -13,7 +13,7 @@ const App = () => {
   ];
   //console.log(expenses + "outside");
   const addExpenseHandler = expense => {
-    console.log(expense);
+    //console.log(expense);
     //console.log("App.js");
   };
 
@@ -22,7 +22,7 @@ const App = () => {
       <h2>Let's get started!</h2>ßßß
       <NewExpense onAddExpense = {addExpenseHandler} />
       <Expenses items={expenses} />
-      
+
     </div>
 
   );

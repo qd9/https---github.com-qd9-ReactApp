@@ -1,6 +1,6 @@
 {
     "calendar":[
-        { "title": "Title 1", "amount": "11111", "date": "new Date()" },
+        { "title": "Title 1", "amount": "11111", "date": "(new Date()).toString()"},
         { "title": "Title 2", "amount": "11112", "date": "new Date()" },
         { "title": "Title 3", "amount": "11113", "date": "new Date()" },
         { "title": "Title 4", "amount": "11114", "date": "new Date()" },
