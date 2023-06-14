@@ -21,12 +21,14 @@ const ExpenseForm = (props) => {
         // })
         //use React default function to 100% it will be the latest state.
         // should pass a function on prevState!!
+        console.log(event.target.value + 'title');
         setUserInput((prevState) => {
             return {
                 ...prevState,
                 enteredTitle:event.target.value
             }
-        })
+        });
+        
     };
 
     const amountChangeHandler = event =>{
@@ -67,7 +69,7 @@ const ExpenseForm = (props) => {
             amount:userInput.enteredAmount,
             date:new Date(userInput.enteredDate)
         }
-        console.log(expenseData);
+        console.log(expenseData + 'form');
         props.onSaveExpenseData(expenseData);
         setUserInput(()=>{
             return{
