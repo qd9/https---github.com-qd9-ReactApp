@@ -4,12 +4,12 @@ import NewExpense from "./components/NewExpense/NewExpense";
 import data from "./data.json"
 
 const DUMMY_EXPENSES = [
-  { title: "Title 1", amount: "11111", date: new Date(2020, 1, 1) },
-  { title: "Title 2", amount: "11112", date: new Date(2021, 6, 1) },
-  { title: "Title 3", amount: "11113", date: new Date(2022, 5, 1) },
-  { title: "Title 4", amount: "11114", date: new Date(2022, 2, 1) },
-  { title: "Title 5", amount: "11115", date: new Date(2021, 3, 1) },
-  { title: "Title 6", amount: "11116", date: new Date(2020, 4, 1) }
+  { title: "Title 1", amount: "11111", date: new Date(2020, 1, 1), id: 0 },
+  { title: "Title 2", amount: "11112", date: new Date(2021, 6, 1), id: 1 },
+  { title: "Title 3", amount: "11113", date: new Date(2022, 5, 1), id: 2 },
+  { title: "Title 4", amount: "11114", date: new Date(2022, 2, 1), id: 3 },
+  { title: "Title 5", amount: "11115", date: new Date(2021, 3, 1), id: 4 },
+  { title: "Title 6", amount: "11116", date: new Date(2020, 4, 1), id: 5 }
 ];
 
 const App = () => {
