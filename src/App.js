@@ -9,7 +9,8 @@ const DUMMY_EXPENSES = [
   { title: "Title 3", amount: "11113", date: new Date(2022, 5, 1), id: 2 },
   { title: "Title 4", amount: "11114", date: new Date(2022, 2, 1), id: 3 },
   { title: "Title 5", amount: "11115", date: new Date(2021, 3, 1), id: 4 },
-  { title: "Title 6", amount: "11116", date: new Date(2020, 4, 1), id: 5 }
+  { title: "Title 6", amount: "11116", date: new Date(2020, 4, 1), id: 5 },
+  { title: "Title 7", amount: "11117", date: new Date(2023, 4, 1), id: 6 },
 ];
 
 const App = () => {
