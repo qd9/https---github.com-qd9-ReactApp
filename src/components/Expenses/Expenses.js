@@ -10,12 +10,12 @@ const Expenses = (props) => {
     //console.log(props.items + "inside");
     const [filteredYear, setFilterYear] = useState('2020');
 
-    const filterChangeHandler =  selectedYear => {
+    const filterChangeHandler = selectedYear => {
         setFilterYear(selectedYear);
         console.log(selectedYear);
     };
 
-    const filteredExpenses = props.items.filter( expense => {
+    const filteredExpenses = props.items.filter(expense => {
         return expense.date.getFullYear().toString() === filteredYear;
     });
 
@@ -34,7 +34,7 @@ const Expenses = (props) => {
     return (
         <div>
             <Card className='expenses'>
-                <ExpensesFilter selected = {filteredYear} onChangeFilter = {filterChangeHandler}></ExpensesFilter>
+                <ExpensesFilter selected={filteredYear} onChangeFilter={filterChangeHandler}></ExpensesFilter>
                 {/* Key can be any unique ID */}
                 {/* {filteredExpenses.length === 0 && <p>No Expense Found! </p>}
                 {filteredExpenses.length > 0 &&
@@ -47,8 +47,8 @@ const Expenses = (props) => {
                         />
                     ))
                 }      */}
-                <ExpensesChart expenses = {filteredExpenses} />
-                <ExpensesList items = {filteredExpenses} />
+                <ExpensesChart expenses={filteredExpenses} />
+                <ExpensesList items={filteredExpenses} />
             </Card>
         </div>
     )
